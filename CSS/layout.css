@@ -1,0 +1,645 @@
+body {
+	font: 14px/1.4 Georgia, sans-serif;
+	margin: 0;
+}
+
+header {
+	font: 30px Impact, sans-serif;
+	color: white;
+	background-color: green;
+	text-align: center;
+	padding-top: 0.5%;
+}
+
+#wrap {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
+	
+}
+
+#wrap h1 {
+	font: 40px/2 Impact, sans-serif;
+	color: #green;
+	padding-left: 1%;
+}
+
+h2 {
+	font: 32px/1.2 Impact, sans-serif;
+	color: #green;
+}
+
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	background-color: green;
+	
+	}
+
+	#menu {
+    width: 1600px;
+    margin: 60px auto;
+    border: 1px solid #222;
+    background-color: green;
+    background-image: linear-gradient(green, green);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+	}
+
+	#menu:before,
+	#menu:after {
+    content: "";
+    display: table;
+	}
+
+	#menu:after {
+    clear: both;
+	}
+
+	#menu {
+    zoom:1;
+	background-color: green;
+	
+	}
+
+/* list elements */
+
+	#menu li {
+    float: left;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+	background-color: green;
+	color: white;
+	}
+
+	#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: white;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+	}
+
+	#menu li:hover > a {
+    color: white;
+	}
+
+
+
+/* Handle the animation of the submenus */
+
+	#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #444;   
+    background: linear-gradient(#444, #111);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+	}
+
+	#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+	}
+
+#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+	}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	}
+
+#menu ul li:last-child {   
+    box-shadow: none;    
+	}
+
+	#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	}
+
+	#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+	}
+
+/* Handle the First and Last Child */
+	#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+	}
+
+	#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+	}
+
+	#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+	}
+
+	#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+	}
+
+	#menu ul ul li:first-child a:hover:after {
+    border-right-color: #0299d3; 
+    border-bottom-color: transparent;   
+	}
+
+	#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+	}
+footer {
+	text-align: left;
+	background-color: green;
+	color: white;
+	padding-bottom: 0%;
+}
+
+footer li {
+	display: inline;
+	padding: 3.2%;
+}
+
+footer a {
+	font: 30px/6 Impact, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+section {
+	float: left;
+	width: 46%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px 10px 10px 10px;
+}
+
+section img {
+	float: left;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+aside {
+	float: right;
+	width: 46%;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px 10px 10px 10px;
+}
+
+aside img {
+	float: left;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+	background-color: #14727D;
+	font: 22px/2 Impact, sans-serif;
+	padding-top: 2%;
+	}
+	
+	#wrap {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	overflow: auto;
+	padding-right: 3%;
+	}
+
+	#wrap h1 {
+	font: 35px/2 Impact, sans-serif;
+	color: #666;
+	padding-left: 1%;
+	}
+
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+	#menu {
+    width: 960px;
+    margin: 60px auto;
+    border: 1px solid #222;
+    background-color: lightgreen;
+    background-image: linear-gradient(#444, #green);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+	}
+
+	#menu:before,
+	#menu:after {
+    content: "";
+    display: table;
+	}
+
+	#menu:after {
+    clear: both;
+	}
+
+	#menu {
+    zoom:1;
+	}
+
+/* list elements */
+
+	#menu li {
+    float: left;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+	}
+
+	#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+	}
+
+	#menu li:hover > a {
+    color: #fafafa;
+	}
+
+
+
+/* Handle the animation of the submenus */
+
+	#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #444;   
+    background: linear-gradient(#444, #111);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+	}
+
+	#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+	}
+
+	#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+	}
+
+	#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	}
+
+	#menu ul li:last-child {   
+    box-shadow: none;    
+	}
+
+	#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	}
+	
+	#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+	}
+
+/* Handle the First and Last Child */
+	#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+	}
+
+	#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+	}
+
+	#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+	}
+
+	#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+	}
+	
+	#menu ul ul li:first-child a:hover:after {
+    border-right-color: #0299d3; 
+    border-bottom-color: transparent;   
+	}
+
+	#menu ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+	}
+
+	section {
+	float: none;
+	width: 98%;
+	margin-bottom: 1%;    /* or just margin? */
+	}
+
+	section img {
+	padding-bottom: 1px;
+	}
+	
+	aside {
+	float: none;
+	width: 98%;
+	}
+
+	aside img {
+	padding-bottom: 1px;
+	}
+
+	footer {
+	background-color: #14727D;
+	}
+
+	footer li {
+	padding: 1.5%;
+	}
+
+	footer a {
+	font: 15px/6 Impact, sans-serif;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header {
+	background-color: #DB9E36;
+	font: 16px/2 Impact, sans-serif;
+	padding-top: 2%;
+	}
+
+	#wrap {
+	width: 98%;
+	margin: 0 auto;
+	}
+
+	#wrap h1 {
+	font: 30px/2 Impact, sans-serif;
+	color: #666;
+	padding-left: 1%;
+	}
+
+	h2 {
+	font: 22px/1.2 Impact, sans-serif;
+	color: #666;
+	}
+
+	#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+	#menu {
+    width: 960px;
+    margin: 60px auto;
+    border: 1px solid #222;
+    background-color: #BD4932;
+    background-image: linear-gradient(#444, #BD4932);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+	}
+
+	#menu:before,
+	#menu:after {
+    content: "";
+    display: table;
+	}
+
+	#menu:after {
+    clear: both;
+	}
+
+	#menu {
+    zoom:1;
+	}
+
+/* list elements */
+
+	#menu li {
+    float: left;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+	}
+
+	#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+	}
+
+	#menu li:hover > a {
+    color: #fafafa;
+	}
+
+
+
+/* Handle the animation of the submenus */
+
+	#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;    
+    background: #444;   
+    background: linear-gradient(#444, #111);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+	}
+
+	#menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+	}
+
+	#menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);      
+	}
+
+	#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	}
+
+	#menu ul li:last-child {   
+    box-shadow: none;    
+	}
+
+	#menu ul a {    
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	}
+
+	#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+	}
+
+/* Handle the First and Last Child */
+	#menu ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+	}
+
+	#menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+	}
+
+	#menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+	}
+
+	#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+	}
+
+	#menu ul ul li:first-child a:hover:after {
+    border-right-color: #0299d3; 
+    border-bottom-color: transparent;   
+	}
+
+	#menu ul li:last-child > a {
+	border-radius: 0 0 3px 3px;
+	}
+
+	section {
+	float: none;
+	width: 98%;
+	margin-bottom: 1%;
+	border: none;
+	}
+
+	section img {
+	display: none;
+	}
+
+	aside {
+	float: none;
+	width: 98%;
+	border: none;
+	}
+
+	aside img {
+	display: none;
+	}
+
+	footer {
+	background-color: green;
+	color: white;
+	text-align: left;
+	
+}	
+
+	
+}
