@@ -4,7 +4,7 @@ body {
 }
 
 header {
-	font: 30px Impact, sans-serif;
+	font: 35px Arial, Helvetica;
 	color: white;
 	background-color: green;
 	text-align: center;
@@ -92,7 +92,6 @@ h2 {
 	#menu li:hover > a {
     color: white;
 	}
-
 
 
 /* Handle the animation of the submenus */
@@ -242,16 +241,22 @@ aside img {
 	margin-top: -50px;
 }
 
-#table, th, td {
-border: solid;
-border-collapse: collapse;
-padding: 20px;
-align: center;
- 
+table {
+align: right;
 }
+
+#table, td {
+padding: 5px;
+align: center;
+}
+
+#padding {
+padding-top: 50px;
+}
+
 .flip-box {
   background-color: transparent;
-  width: 300px;
+  width: 275px;
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
@@ -292,7 +297,8 @@ align: center;
   .box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px 2em;
+  grid-gap: 50px 2em;
+  grid-column-gap: 50px;
 }
 
 .box :first-child {
@@ -558,13 +564,15 @@ aside img {
 	margin-top: -50px;
 }
 
-#table, th, td {
-border: none;
-border-collapse: collapse;
-padding: 20px;
+#table, td {
+padding: 5px;
 align: center;
- 
 }
+
+#padding {
+padding-top: 50px;
+}
+
 .flip-box {
   background-color: transparent;
   width: 300px;
